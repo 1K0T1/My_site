@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Среда
+.venv/
+.env
+
+# Секреты и ключи
+*.pem
+
+# Локальные базы
+data_base/
+
+# VSCode
+.vscode/

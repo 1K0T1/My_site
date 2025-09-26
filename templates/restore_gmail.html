@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="secret letter"> <!-- для поисковика -->
+    <title>Secret</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body class="restore_gmail">
+    <h1 class="grid-h1">Добро пожаловать!</h1>
+    <form action="/restore" method="post" class="from">
+        <label for="gmailinput">Введите почту:</label>
+        <input type="email" name="email" id="gmailinput">
+        <button type="submit" class="item1">Отправить</button>
+    </form>
+</body>
+</html>

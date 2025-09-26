@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="secret letter"> <!-- для поисковика -->
+    <title>Secret</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body class="login">
+    <h1 class="grid-h1">Добро пожаловать!</h1>
+    <form action="/login" method="post" class="grid-login">
+        <label>Введите логин: <input type="text" name="username"></label>
+        <label>Введите пароль: <input type="password" name="password"></label>
+        <button type="submit" class="item1">Войти</button>
+        <a href="{{ url_for('restore_gmail')}}" class="url_restore">Восстановить пароль</a>
+    </form>
+    <h3>{{message}}</h3>
+</body>
+</html>
